@@ -1,0 +1,19 @@
+<view class="CustomerList" wx:for="{{CustomerList}}" wx:for-item="item" wx:key="CustomerList" bindtap="CustomerDetails">
+    <view class="text_list">
+        <view class="text">
+            <view class="text_left">用气编号</view>
+            <view class="text_right">{{item.GasNumber}}</view>
+        </view>
+        <view class="text" style="margin-top: 20rpx;">
+            <view class="text_left">购气周期</view>
+            <view class="text_right">{{item.GasCycle}}</view>
+        </view>
+        <view class="text" style="margin-top: 20rpx;">
+            <view class="text_left">购气地址</view>
+            <view class="text_right">{{item.GasAddress}}</view>
+        </view>
+    </view>
+    <view class="btn_edit">
+        <view class="edit" catchtap="onEdit">编辑</view>
+    </view>
+</view>

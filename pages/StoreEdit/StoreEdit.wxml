@@ -1,0 +1,17 @@
+<view class="operatorList" >
+    <view class="operatorList_top">
+        <view class="text">
+            <view class="text_left">门店名称:</view>
+            <view class="text_right">
+                <input value="{{name}}" placeholder="请输入门店名称"/>
+            </view>
+        </view>
+        <view class="text">
+            <view class="text_left">门店地址:</view>
+            <view class="text_right">
+                <input value="{{phone}}" placeholder="请输入门店地址"/>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="btn_Submission">提交</view>

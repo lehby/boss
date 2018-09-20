@@ -1,0 +1,4 @@
+@import "../StaffEdit/StaffEdit.wxss";
+.text{
+    border-bottom:2rpx solid #eee;
+}

@@ -1,0 +1,14 @@
+<view class="PurchaseList" wx:for="{{LeaseList}}" wx:for-item="item" wx:key="LeaseList" bindtap="LeaseDetails">
+    <view class="text">
+        <view>租赁对象</view>
+        <view>{{item.LeasedObject}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>钢瓶总数</view>
+        <view>{{item.Total}}瓶</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>钢瓶种类</view>
+        <view>{{item.type}}</view>
+    </view>
+</view>

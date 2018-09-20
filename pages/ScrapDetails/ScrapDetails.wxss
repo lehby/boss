@@ -1,0 +1,8 @@
+@import "../FillingDetails/FillingDetails.wxss";
+
+.Remarks{
+    padding: 30rpx 20rpx;
+    display: flex;
+    background-color: #fff;
+    font-size: 28rpx;
+}

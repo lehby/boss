@@ -1,0 +1,16 @@
+<view class="Palace">
+    <view class="box" bindtap="onGoodsInformation">
+        <image src="../../imgs/11.png" />
+        <view >商品管理</view>
+    </view>
+    <view class="box" bindtap="onStore">
+        <image src="../../imgs/13.png" />
+        <view >门店管理</view>
+    </view>
+</view>
+<view class="Palace">
+    <view class="box" bindtap="onSecretKey" style="width:336rpx;">
+        <image src="../../imgs/12.png" />
+        <view >密钥管理</view>
+    </view>
+</view>

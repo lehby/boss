@@ -1,0 +1,10 @@
+<view class="PurchaseList" wx:for="{{InspectList}}" wx:for-item="item" wx:key="InspectList" bindtap="InspectDetails">
+    <view class="text">
+        <view>检总数测</view>
+        <view>{{item.InspectTotal}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>费用金额</view>
+        <view>￥{{item.InspectPrice}}</view>
+    </view>
+</view>

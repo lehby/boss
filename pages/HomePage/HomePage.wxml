@@ -1,0 +1,20 @@
+<view class="Palace">
+    <view class="box" bindtap="onStaff">
+        <image src="../../imgs/111.png" />
+        <view >员工管理</view>
+    </view>
+    <view class="box" bindtap="onOrderAdministration">
+        <image src="../../imgs/222.png" />
+        <view >订单信息管理</view>
+    </view>
+</view>
+<view class="Palace">
+    <view class="box" bindtap="onCustomerAdministration">
+        <image src="../../imgs/333.png" />
+        <view >客户信息管理</view>
+    </view>
+    <view class="box" bindtap="onShipments">
+        <image src="../../imgs/444.png" />
+        <view >统计查询</view>
+    </view>
+</view>

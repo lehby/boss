@@ -1,0 +1,10 @@
+<view class="PurchaseList" wx:for="{{ScrapList}}" wx:for-item="item" wx:key="ScrapList" bindtap="ScrapDetails">
+    <view class="text">
+        <view>报废总数</view>
+        <view>{{item.ScrapTotal}}瓶</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>报废时间</view>
+        <view>{{item.ScrapTime}}</view>
+    </view>
+</view>

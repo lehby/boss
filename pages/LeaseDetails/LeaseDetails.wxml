@@ -1,0 +1,49 @@
+<view class="InventoryGoods">
+    <view class="InventoryTitle">租赁商品</view>
+    <view class="from_top">
+        <view>名称</view>
+        <view>数量</view>
+    </view>
+    <view class="from_td">
+        <view>液化气大瓶</view>
+        <view>3</view>
+    </view>
+     <view class="from_td">
+        <view>液化气大瓶</view>
+        <view>3</view>
+    </view>
+</view>
+<view class="information" style="margin-top: 22rpx;">
+    <view>租赁信息</view>
+    <view></view>
+</view>
+<view class="information">
+    <view>租赁对象</view>
+    <view>某某某</view>
+</view>
+<view class="information">
+    <view>钢瓶总数</view>
+    <view>6瓶</view>
+</view>
+<view class="information">
+    <view>钢瓶种类</view>
+    <view>大瓶</view>
+</view>
+<view class="information" style="margin-top: 22rpx;">
+    <view>租赁押金</view>
+    <view></view>
+</view>
+<view class="information">
+    <view>单瓶押金</view>
+    <view>￥120</view>
+</view>
+<view class="information">
+    <view>总押金</view>
+    <view>￥720</view>
+</view>
+<view class="information">
+    <view>月租金</view>
+    <view>￥1720</view>
+</view>
+
+

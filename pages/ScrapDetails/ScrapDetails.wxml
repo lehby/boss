@@ -1,0 +1,31 @@
+<view class="InventoryGoods">
+    <view class="InventoryTitle">报废商品</view>
+    <view class="from_top">
+        <view>名称</view>
+        <view>数量</view>
+    </view>
+    <view class="from_td">
+        <view>液化气大瓶</view>
+        <view>3</view>
+    </view>
+     <view class="from_td">
+        <view>液化气大瓶</view>
+        <view>3</view>
+    </view>
+</view>
+<view class="information" style="margin-top: 22rpx;">
+    <view>报废信息</view>
+    <view></view>
+</view>
+<view class="information">
+    <view>报废总数</view>
+    <view>6瓶</view>
+</view>
+<view class="information">
+    <view>报废时间</view>
+    <view>2018-08-23</view>
+</view>
+<view class="Remarks">
+    <view >备注:</view>
+    <view style="margin-left:30rpx;">备注备注备注注备注备注备注备注</view>
+</view>

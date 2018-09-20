@@ -1,0 +1,14 @@
+<view class="PurchaseList" wx:for="{{RecoveryList}}" wx:for-item="item" wx:key="RecoveryList" bindtap="RecoveryDetails">
+    <view class="text">
+        <view>回收总量</view>
+        <view>{{item.RecoveryTotal}}公斤</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>回收总价</view>
+        <view>￥{{item.RecoveryPrice}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>回收时间</view>
+        <view>{{item.RecoveryTime}}</view>
+    </view>
+</view>

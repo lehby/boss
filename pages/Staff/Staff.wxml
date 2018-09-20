@@ -1,0 +1,131 @@
+<!-- 导航条 -->
+<view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+        {{item}}
+    </text>
+</view>
+<!-- 接线员 -->
+<view hidden="{{currentTab!==0}}">
+    <view class="operatorList" wx:for="{{operatorList}}" wx:for-item="item" wx:key="operatorList">
+        <view class="operatorList_top">
+            <view>
+                <view class="text_left">姓名:</view>
+                <view class="text_right">{{item.name}}</view>
+            </view>
+            <view>
+                <view class="text_left">联系电话:</view>
+                <view class="text_right">{{item.phone}}</view>
+            </view>
+            <view>
+                <view class="text_left">工种:</view>
+                <view class="text_right">{{item.post}}</view>
+            </view>
+        </view>
+        <view class="operatorList_bottom">
+            <view class="btn" bindtap="onEdit">编辑</view>
+        </view>
+    </view>
+    <!-- 占位 -->
+    <view class="occupy"></view>
+    <view class="footer" bindtap="onEdit">新增员工</view>
+</view>
+<!-- 派单员 -->
+<view hidden="{{currentTab!==1}}">
+    <view class="operatorList" wx:for="{{DispatchedList}}" wx:for-item="item" wx:key="DispatchedList">
+        <view class="operatorList_top">
+            <view>
+                <view class="text_left">姓名:</view>
+                <view class="text_right">{{item.name}}</view>
+            </view>
+            <view>
+                <view class="text_left">联系电话:</view>
+                <view class="text_right">{{item.phone}}</view>
+            </view>
+            <view>
+                <view class="text_left">工种:</view>
+                <view class="text_right">{{item.post}}</view>
+            </view>
+        </view>
+        <view class="operatorList_bottom">
+            <view class="btn" bindtap="onEdit">编辑</view>
+        </view>
+    </view>
+    <!-- 占位 -->
+    <view class="occupy"></view>
+    <view class="footer" bindtap="onEdit">新增员工</view>
+</view>
+<!-- 收银 -->
+<view hidden="{{currentTab!==2}}">
+     <view class="operatorList" wx:for="{{CollectingSilverList}}" wx:for-item="item" wx:key="CollectingSilverList">
+        <view class="operatorList_top">
+            <view>
+                <view class="text_left">姓名:</view>
+                <view class="text_right">{{item.name}}</view>
+            </view>
+            <view>
+                <view class="text_left">联系电话:</view>
+                <view class="text_right">{{item.phone}}</view>
+            </view>
+            <view>
+                <view class="text_left">工种:</view>
+                <view class="text_right">{{item.post}}</view>
+            </view>
+        </view>
+        <view class="operatorList_bottom">
+            <view class="btn" bindtap="onEdit">编辑</view>
+        </view>
+    </view>
+    <!-- 占位 -->
+    <view class="occupy"></view>
+    <view class="footer" bindtap="onEdit">新增员工</view>
+</view>
+<!-- 库管 -->
+<view hidden="{{currentTab!==3}}">
+    <view class="operatorList" wx:for="{{StorehouseList}}" wx:for-item="item" wx:key="StorehouseList">
+        <view class="operatorList_top">
+            <view>
+                <view class="text_left">姓名:</view>
+                <view class="text_right">{{item.name}}</view>
+            </view>
+            <view>
+                <view class="text_left">联系电话:</view>
+                <view class="text_right">{{item.phone}}</view>
+            </view>
+            <view>
+                <view class="text_left">工种:</view>
+                <view class="text_right">{{item.post}}</view>
+            </view>
+        </view>
+        <view class="operatorList_bottom">
+            <view class="btn" bindtap="onEdit">编辑</view>
+        </view>
+    </view>
+    <!-- 占位 -->
+    <view class="occupy"></view>
+    <view class="footer" bindtap="onEdit">新增员工</view>
+</view>
+<!-- 配送工 -->
+<view hidden="{{currentTab!==4}}">
+    <view class="operatorList" wx:for="{{DistributionWorkerList}}" wx:for-item="item" wx:key="DistributionWorkerList">
+        <view class="operatorList_top">
+            <view>
+                <view class="text_left">姓名:</view>
+                <view class="text_right">{{item.name}}</view>
+            </view>
+            <view>
+                <view class="text_left">联系电话:</view>
+                <view class="text_right">{{item.phone}}</view>
+            </view>
+            <view>
+                <view class="text_left">工种:</view>
+                <view class="text_right">{{item.post}}</view>
+            </view>
+        </view>
+        <view class="operatorList_bottom">
+            <view class="btn" bindtap="onEdit">编辑</view>
+        </view>
+    </view>
+    <!-- 占位 -->
+    <view class="occupy"></view>
+    <view class="footer" bindtap="onEdit">新增员工</view>
+</view>

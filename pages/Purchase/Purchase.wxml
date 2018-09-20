@@ -1,0 +1,18 @@
+<view class="PurchaseList" wx:for="{{PurchaseList}}" wx:for-item="item" wx:key="PurchaseList" bindtap="PurchaseDetails">
+    <view class="text">
+        <view>采购单号</view>
+        <view>{{item.PurchaseOrder}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>采购人</view>
+        <view>{{item.PurchasePeople}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>采购日期</view>
+        <view>{{item.PurchaseDate}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>总金额</view>
+        <view>￥{{item.PurchasePrice}}</view>
+    </view>
+</view>

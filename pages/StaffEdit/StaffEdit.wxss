@@ -1,0 +1,11 @@
+@import "../Staff/Staff.wxss";
+.btn_Submission{
+    margin: 200rpx auto;
+    width: 600rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    background-color: #0F59BD;
+    color: #fff;
+    border-radius: 50rpx;
+}

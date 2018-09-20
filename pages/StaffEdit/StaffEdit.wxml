@@ -1,0 +1,23 @@
+<view class="operatorList" >
+    <view class="operatorList_top">
+        <view>
+            <view class="text_left">姓名:</view>
+            <view class="text_right">
+                <input value="{{name}}" placeholder="请输入姓名"/>
+            </view>
+        </view>
+        <view>
+            <view class="text_left">联系电话:</view>
+            <view class="text_right">
+                <input value="{{phone}}" placeholder="请输入联系电话"/>
+            </view>
+        </view>
+        <view>
+            <view class="text_left">工种:</view>
+            <view class="text_right">
+                <input value="{{post}}" placeholder="请输入工种" />
+            </view>
+        </view>
+    </view>
+</view>
+<view class="btn_Submission">提交</view>

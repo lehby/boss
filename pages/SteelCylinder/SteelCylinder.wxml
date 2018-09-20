@@ -1,0 +1,30 @@
+<view class="Palace">
+    <view class="box" bindtap="onPurchase">
+        <image src="../../imgs/555.png" />
+        <view >采购记录</view>
+    </view>
+    <view class="box" bindtap="onFilling">
+        <image src="../../imgs/666.png" />
+        <view >充装记录</view>
+    </view>
+</view>
+<view class="Palace">
+    <view class="box" bindtap="onLease">
+        <image src="../../imgs/777.png" />
+        <view >钢瓶租赁记录</view>
+    </view>
+    <view class="box" bindtap="onInspect">
+        <image src="../../imgs/888.png" />
+        <view >钢瓶检查记录</view>
+    </view>
+</view>
+<view class="Palace">
+    <view class="box" bindtap="onScrap">
+        <image src="../../imgs/999.png" />
+        <view >钢瓶报废记录</view>
+    </view>
+    <view class="box" bindtap="onRecovery">
+        <image src="../../imgs/1010.png" />
+        <view >钢瓶回收记录</view>
+    </view>
+</view>

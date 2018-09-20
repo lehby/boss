@@ -1,0 +1,15 @@
+<view class="StoreList" wx:for="{{StoreList}}" wx:for-item="item" wx:key="StoreList">
+    <view class="StoreList_top">
+        <view class="text">
+            <view>门店名称</view>
+            <view>{{item.StoreName}}</view>
+        </view>
+        <view class="text" style=" margin-top: 20rpx;">
+            <view>门店地址</view>
+            <view>{{item.StoreAddress}}</view>
+        </view>
+    </view>
+    <view class="btn_edit">
+        <view class="edit" bindtap="StoreEdit">编辑</view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="PurchaseList" wx:for="{{FillingList}}" wx:for-item="item" wx:key="FillingList" bindtap="FillingDetails">
+    <view class="text">
+        <view>充装站名称</view>
+        <view>{{item.FillingName}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>运输车辆</view>
+        <view>{{item.FillingVehicle}}</view>
+    </view>
+    <view class="text" style="margin-top: 20rpx;">
+        <view>充装总量</view>
+        <view>{{item.FillingTotal}}辆</view>
+    </view>
+</view>

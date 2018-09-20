@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/SteelCylinder/SteelCylinder",
+    "pages/Filling/Filling",
+    "pages/Purchase/Purchase",
+    "pages/HomePage/HomePage",
+    "pages/SecretKey/SecretKey",
+    "pages/Store/Store",
+    "pages/GoodsInformation/GoodsInformation",
+    "pages/CustomerDetails/CustomerDetails",
+    "pages/CustomerAdministration/CustomerAdministration",
+    "pages/OrderAdministration/OrderAdministration",
+    "pages/Staff/Staff",
+    "pages/Administration/Administration",
+    "pages/StaffEdit/StaffEdit",
+    "pages/OrderAdministrationDetails/OrderAdministrationDetails",
+    "pages/RepairAdministrationDetails/RepairAdministrationDetails",
+    "pages/CustomerEdit/CustomerEdit",
+    "pages/GoodsEdit/GoodsEdit",
+    "pages/StoreEdit/StoreEdit",
+    "pages/PurchaseDetails/PurchaseDetails",
+    "pages/FillingDetails/FillingDetails",
+    "pages/Lease/Lease",
+    "pages/LeaseDetails/LeaseDetails",
+    "pages/Inspect/Inspect",
+    "pages/InspectDetails/InspectDetails",
+    "pages/Scrap/Scrap",
+    "pages/ScrapDetails/ScrapDetails",
+    "pages/Recovery/Recovery",
+    "pages/RecoveryDetails/RecoveryDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2269d4",
+    "navigationBarTitleText": "老板",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#245cd7",
+    "list": [
+      {
+        "pagePath": "pages/HomePage/HomePage",
+        "text": "首页",
+        "iconPath": "/imgs/home.png",
+        "selectedIconPath": "/imgs/home1.png"
+      },
+      {
+        "pagePath": "pages/Administration/Administration",
+        "text": "基础管理",
+        "iconPath": "/imgs/Administration.png",
+        "selectedIconPath": "/imgs/Administration1.png"
+      },
+      {
+        "pagePath": "pages/SteelCylinder/SteelCylinder",
+        "text": "钢瓶管理",
+        "iconPath": "/imgs/SteelCylinder.png",
+        "selectedIconPath": "/imgs/SteelCylinder1.png"
+      }
+    ]
+  }
+}

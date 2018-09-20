@@ -1,0 +1,43 @@
+<view class="InventoryGoods">
+    <view class="InventoryTitle">充装商品</view>
+    <view class="from_top">
+        <view>名称</view>
+        <view>数量</view>
+    </view>
+    <view class="from_td">
+        <view>液化气大瓶</view>
+        <view>3</view>
+    </view>
+     <view class="from_td">
+        <view>液化气大瓶</view>
+        <view>3</view>
+    </view>
+</view>
+<view class="information" style="margin-top: 22rpx;">
+    <view>充装信息</view>
+    <view></view>
+</view>
+<view class="information">
+    <view>充装站名称</view>
+    <view>某某某液化气充装站</view>
+</view>
+<view class="information">
+    <view>运输车辆</view>
+    <view>川H77786</view>
+</view>
+<view class="information">
+    <view>充装总量</view>
+    <view>6辆</view>
+</view>
+<view class="information" style="margin-top: 22rpx;">
+    <view>跟踪信息</view>
+    <view></view>
+</view>
+<view class="information">
+    <view>操作人</view>
+    <view>某某某</view>
+</view>
+<view class="information">
+    <view>充装时间</view>
+    <view>2018-08-23</view>
+</view>
