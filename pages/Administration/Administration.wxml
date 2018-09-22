@@ -1,16 +1,20 @@
 <view class="Palace">
+    <view class="box" bindtap="onAddgoods">
+        <image src="../../imgs/11.png" />
+        <view >新增商品</view>
+    </view>
     <view class="box" bindtap="onGoodsInformation">
         <image src="../../imgs/11.png" />
-        <view >商品管理</view>
-    </view>
-    <view class="box" bindtap="onStore">
-        <image src="../../imgs/13.png" />
-        <view >门店管理</view>
+        <view >商品维护</view>
     </view>
 </view>
 <view class="Palace">
-    <view class="box" bindtap="onSecretKey" style="width:336rpx;">
+    <view class="box" bindtap="onStore" >
+        <image src="../../imgs/13.png" />
+        <view >门店维护</view>
+    </view>
+     <view class="box" bindtap="onSecretKey" >
         <image src="../../imgs/12.png" />
-        <view >密钥管理</view>
+        <view >设置key</view>
     </view>
 </view>

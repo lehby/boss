@@ -20,6 +20,7 @@
 }
 .operatorList_top>view{
     display: flex;
+    line-height: 60rpx;
 }
 .text_left{
     padding: 5rpx 0;
@@ -28,6 +29,9 @@
 }
 .text_right{
     padding: 5rpx 0;
+}
+.text_right>input{
+    height:60rpx;
 }
 .operatorList_bottom{
     height: 100rpx;

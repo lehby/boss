@@ -1,2 +1,29 @@
-<!--pages/GoodsEdit/GoodsEdit.wxml-->
-<text>pages/GoodsEdit/GoodsEdit.wxml</text>
+<view class="operatorList" >
+    <view class="operatorList_top">
+        <view>
+            <view class="text_left">商品名称:</view>
+            <view class="text_right">
+                <input value="{{name}}" placeholder="请输入商品名称"/>
+            </view>
+        </view>
+        <view>
+            <view class="text_left">销售类型:</view>
+            <view class="text_right">
+                <input value="{{phone}}" placeholder="请输入销售类型"/>
+            </view>
+        </view>
+        <view>
+            <view class="text_left">单价销售:</view>
+            <view class="text_right">
+                <input value="{{post}}" placeholder="请输入单价销售" />
+            </view>
+        </view>
+        <view>
+            <view class="text_left">当前库存:</view>
+            <view class="text_right">
+                <input value="{{post}}" placeholder="请输入当前库存" />
+            </view>
+        </view>
+    </view>
+</view>
+<view class="btn_Submission">提交</view>

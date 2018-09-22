@@ -1,67 +1,23 @@
-<!-- 导航条 -->
-<view class="navbar">
-    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
-        {{item}}
-    </text>
-</view>
-<!-- 商品维护 -->
-<view hidden="{{currentTab!==0}}">
-    <view class="goodslist" wx:for="{{goodslist}}" wx:for-item="item" wx:key="goodslist">
-        <view class="text">
-            <view class="goods_text">
-                <view style="color: #9c9c9c;">商品名称</view>
-                <view class="right">{{item.goodsName}}</view>
-            </view>
-            <view class="goods_text" style="margin-top: 20rpx;">
-                <view style="color: #9c9c9c;">销售类型</view>
-                <view class="right">{{item.SalesType}}</view>
-            </view>
-            <view class="goods_text" style="margin-top: 20rpx;">
-                <view style="color: #9c9c9c;">单价销售</view>
-                <view class="right">￥{{item.UnitPrice}}</view>
-            </view>
-            <view class="goods_text" style="margin-top: 20rpx;">
-                <view style="color: #9c9c9c;">当前库存</view>
-                <view class="right">{{item.Stock}}</view>
-            </view>
+<view class="goodslist" wx:for="{{goodslist}}" wx:for-item="item" wx:key="goodslist">
+    <view class="text">
+        <view class="goods_text">
+            <view style="color: #9c9c9c;">商品名称</view>
+            <view class="right">{{item.goodsName}}</view>
         </view>
-        <view class="btn_edit">
-            <view class="edit" bindtap="goods_edit">编辑</view>
+        <view class="goods_text" style="margin-top: 20rpx;">
+            <view style="color: #9c9c9c;">销售类型</view>
+            <view class="right">{{item.SalesType}}</view>
+        </view>
+        <view class="goods_text" style="margin-top: 20rpx;">
+            <view style="color: #9c9c9c;">单价销售</view>
+            <view class="right">￥{{item.UnitPrice}}</view>
+        </view>
+        <view class="goods_text" style="margin-top: 20rpx;">
+            <view style="color: #9c9c9c;">当前库存</view>
+            <view class="right">{{item.Stock}}</view>
         </view>
     </view>
-</view>
-<!-- 新增商品 -->
-<view hidden="{{currentTab!==1}}">
-    <view class="goods" bindtap="goodsDisplay" style="margin-top: 20rpx;">
-        <view>选商品 :</view>
-        <view class="goods_right">
-            <view>{{goodsName}}</view>
-            <view style="font-size: 56rpx;margin-left: 30rpx;">></view>
-        </view>
+    <view class="btn_edit">
+        <view class="edit" bindtap="goods_edit">编辑</view>
     </view>
-    <!-- 商品选择弹框 -->
-    <view class="modal-mask" bindtap="goodsHideModal" catchtouchmove="preventTouchMove" wx:if="{{showgoods}}"></view>
-    <view class="modal-dialog" wx:if="{{showgoods}}" style=" top:20%;">
-        <view class="modal-title"></view>
-        <view class="btn-Photograph">商品列表</view>
-        <view class="list" bindtap="goodslist" data-index="{{index}}" wx:for="{{goodslist}}" wx:for-item="item" wx:key="goodslist">
-            {{item.goodsName}}
-        </view>
-    </view>
-    <view class="bottleList">
-        <view>价格设置 :</view>
-        <view class="bottleList_right">
-            <input placeholder="请设置单价" />
-        </view>
-    </view>
-    <view class="bottleList">
-        <view>价格类型设置 :</view>
-        <radio-group name="radio-group" bindchange="radioChange" style="margin-left:50rpx;">
-                <label wx:for="{{radioItems}}" wx:key="radioItems">
-                    <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}" />
-                    {{item.name}}
-                </label>
-        </radio-group>
-    </view>
-    <view class="btn">提交</view>
 </view>

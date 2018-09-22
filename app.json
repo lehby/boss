@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/Administration/Administration",
     "pages/SteelCylinder/SteelCylinder",
     "pages/Filling/Filling",
     "pages/Purchase/Purchase",
@@ -11,7 +12,6 @@
     "pages/CustomerAdministration/CustomerAdministration",
     "pages/OrderAdministration/OrderAdministration",
     "pages/Staff/Staff",
-    "pages/Administration/Administration",
     "pages/StaffEdit/StaffEdit",
     "pages/OrderAdministrationDetails/OrderAdministrationDetails",
     "pages/RepairAdministrationDetails/RepairAdministrationDetails",
@@ -27,7 +27,8 @@
     "pages/Scrap/Scrap",
     "pages/ScrapDetails/ScrapDetails",
     "pages/Recovery/Recovery",
-    "pages/RecoveryDetails/RecoveryDetails"
+    "pages/RecoveryDetails/RecoveryDetails",
+    "pages/Addgoods/Addgoods"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -47,7 +48,7 @@
       },
       {
         "pagePath": "pages/Administration/Administration",
-        "text": "基础管理",
+        "text": "基础信息维护",
         "iconPath": "/imgs/Administration.png",
         "selectedIconPath": "/imgs/Administration1.png"
       },

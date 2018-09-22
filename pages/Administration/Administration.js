@@ -7,6 +7,12 @@ Page({
   data: {
    
   },
+  //新增商品
+  onAddgoods(){
+    wx.navigateTo({
+      url: '/pages/Addgoods/Addgoods',
+    })
+  },
   //密钥管理点击跳转
   onSecretKey(){
     wx.navigateTo({

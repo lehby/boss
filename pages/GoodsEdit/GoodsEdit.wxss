@@ -1,1 +1,1 @@
-/* pages/GoodsEdit/GoodsEdit.wxss */
+@import "../StaffEdit/StaffEdit.wxss"
