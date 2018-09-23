@@ -7,128 +7,80 @@ Page({
   data: {
     navbar: ['订气订单', '维修订单'],
     currentTab: 0,
-    OrderNavBar:['待处理','订单确认','配送出发','配送完成','订单取消'],
+    OrderNavBar:["全部订单",'完成订单','取消订单'],
     OrderCurrentTab:0,
-    //待处理
+    //全部订单
     WaitHandleList:[
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'待处理',
+        state:'全部订单',
       },
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'待处理',
+        state:'全部订单',
       },
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'待处理',
+        state:'全部订单',
       }
     ],
-    //订单确认
+    //完成订单
     OrderConfirmList:[
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'订单确认',
+        state:'完成订单',
       },
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'订单确认',
+        state:'完成订单',
       },
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'订单确认',
+        state:'完成订单',
       }
     ],
-    //配送出发
+    //取消订单
     DistributionStarting:[
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'配送出发',
+        state:'取消订单',
       },
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'配送出发',
+        state:'取消订单',
       },
       {
-        OrderId:"464861534",
+        OrderId:"2018-08-23 14:00",
         Price:"1200",
         phone:"123456786789",
         address:"龙泉区某某镇某某街",
-        state:'配送出发',
+        state:'取消订单',
       }
     ],
-    //配送完成
-    DeliveryCompletion:[
-      {
-        OrderId:"464861534",
-        Price:"1200",
-        phone:"123456786789",
-        address:"龙泉区某某镇某某街",
-        state:'配送完成',
-      },
-      {
-        OrderId:"464861534",
-        Price:"1200",
-        phone:"123456786789",
-        address:"龙泉区某某镇某某街",
-        state:'配送完成',
-      },
-      {
-        OrderId:"464861534",
-        Price:"1200",
-        phone:"123456786789",
-        address:"龙泉区某某镇某某街",
-        state:'配送完成',
-      }
-    ],
-    //订单取消
-    OrderCancel:[
-      {
-        OrderId:"464861534",
-        Price:"1200",
-        phone:"123456786789",
-        address:"龙泉区某某镇某某街",
-        state:'订单取消',
-      },
-      {
-        OrderId:"464861534",
-        Price:"1200",
-        phone:"123456786789",
-        address:"龙泉区某某镇某某街",
-        state:'订单取消',
-      },
-      {
-        OrderId:"464861534",
-        Price:"1200",
-        phone:"123456786789",
-        address:"龙泉区某某镇某某街",
-        state:'订单取消',
-      }
-    ]
   },
   //订单详情页面跳转
   OrderAdministrationDetails(){

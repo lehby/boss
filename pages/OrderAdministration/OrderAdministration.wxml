@@ -12,11 +12,11 @@
             {{item}}
         </text>
     </view>
-    <!-- 待处理 -->
+    <!-- 全部订单 -->
     <view hidden="{{OrderCurrentTab!==0}}">
         <view class="list" wx:for="{{WaitHandleList}}" wx:for-item="item" wx:key="WaitHandleList" bindtap="OrderAdministrationDetails">
             <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
+                <view style="color: #656565;">订单下单时间: {{item.OrderId}}</view>
                 <view style="color: #2168D3;">{{item.state}}</view>
             </view>
             <view class="list_bottom">
@@ -26,11 +26,11 @@
             </view>
         </view>
     </view>
-    <!-- 订单确认 -->
+    <!-- 完成订单 -->
     <view hidden="{{OrderCurrentTab!==1}}">
          <view class="list" wx:for="{{OrderConfirmList}}" wx:for-item="item" wx:key="OrderConfirmList" bindtap="OrderAdministrationDetails">
             <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
+                <view style="color: #656565;">订单下单时间: {{item.OrderId}}</view>
                 <view style="color: #0FBD8C;">{{item.state}}</view>
             </view>
             <view class="list_bottom">
@@ -40,40 +40,12 @@
             </view>
         </view>
     </view>
-    <!-- 配送出发 -->
+    <!-- 取消订单 -->
     <view hidden="{{OrderCurrentTab!==2}}">
         <view class="list" wx:for="{{DistributionStarting}}" wx:for-item="item" wx:key="DistributionStarting" bindtap="OrderAdministrationDetails">
             <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
+                <view style="color: #656565;">订单下单时间: {{item.OrderId}}</view>
                 <view style="color: #BD690F;">{{item.state}}</view>
-            </view>
-            <view class="list_bottom">
-                <view >订单金额: ￥{{item.Price}}</view>
-                <view style="margin-top: 20rpx;">联系电话: {{item.phone}}</view>
-                <view style="margin-top: 20rpx;">地址: {{item.address}}</view>
-            </view>
-        </view>
-    </view>
-    <!-- 配送完成 -->
-    <view hidden="{{OrderCurrentTab!==3}}">
-        <view class="list" wx:for="{{DeliveryCompletion}}" wx:for-item="item" wx:key="DeliveryCompletion" bindtap="OrderAdministrationDetails">
-            <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
-                <view style="color: #BD120F;">{{item.state}}</view>
-            </view>
-            <view class="list_bottom">
-                <view >订单金额: ￥{{item.Price}}</view>
-                <view style="margin-top: 20rpx;">联系电话: {{item.phone}}</view>
-                <view style="margin-top: 20rpx;">地址: {{item.address}}</view>
-            </view>
-        </view>
-    </view>
-    <!-- 订单取消 -->
-    <view hidden="{{OrderCurrentTab!==4}}">
-        <view class="list" wx:for="{{OrderCancel}}" wx:for-item="item" wx:key="OrderCancel" bindtap="OrderAdministrationDetails">
-            <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
-                <view style="color: #BDA60F;">{{item.state}}</view>
             </view>
             <view class="list_bottom">
                 <view >订单金额: ￥{{item.Price}}</view>
@@ -91,11 +63,11 @@
             {{item}}
         </text>
     </view>
-    <!-- 待处理 -->
+    <!-- 全部订单 -->
     <view hidden="{{OrderCurrentTab!==0}}">
         <view class="list" wx:for="{{WaitHandleList}}" wx:for-item="item" wx:key="WaitHandleList" bindtap="RepairAdministrationDetails">
             <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
+                <view style="color: #656565;">订单下单时间: {{item.OrderId}}</view>
                 <view style="color: #2168D3;">{{item.state}}</view>
             </view>
             <view class="list_bottom">
@@ -105,11 +77,11 @@
             </view>
         </view>
     </view>
-    <!-- 订单确认 -->
+    <!-- 完成订单 -->
     <view hidden="{{OrderCurrentTab!==1}}">
          <view class="list" wx:for="{{OrderConfirmList}}" wx:for-item="item" wx:key="OrderConfirmList" bindtap="RepairAdministrationDetails">
             <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
+                <view style="color: #656565;">订单下单时间: {{item.OrderId}}</view>
                 <view style="color: #0FBD8C;">{{item.state}}</view>
             </view>
             <view class="list_bottom">
@@ -119,40 +91,12 @@
             </view>
         </view>
     </view>
-    <!-- 配送出发 -->
+    <!-- 取消订单 -->
     <view hidden="{{OrderCurrentTab!==2}}">
         <view class="list" wx:for="{{DistributionStarting}}" wx:for-item="item" wx:key="DistributionStarting" bindtap="RepairAdministrationDetails">
             <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
+                <view style="color: #656565;">订单下单时间: {{item.OrderId}}</view>
                 <view style="color: #BD690F;">{{item.state}}</view>
-            </view>
-            <view class="list_bottom">
-                <view >订单金额: ￥{{item.Price}}</view>
-                <view style="margin-top: 20rpx;">联系电话: {{item.phone}}</view>
-                <view style="margin-top: 20rpx;">地址: {{item.address}}</view>
-            </view>
-        </view>
-    </view>
-    <!-- 配送完成 -->
-    <view hidden="{{OrderCurrentTab!==3}}">
-        <view class="list" wx:for="{{DeliveryCompletion}}" wx:for-item="item" wx:key="DeliveryCompletion" bindtap="RepairAdministrationDetails">
-            <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
-                <view style="color: #BD120F;">{{item.state}}</view>
-            </view>
-            <view class="list_bottom">
-                <view >订单金额: ￥{{item.Price}}</view>
-                <view style="margin-top: 20rpx;">联系电话: {{item.phone}}</view>
-                <view style="margin-top: 20rpx;">地址: {{item.address}}</view>
-            </view>
-        </view>
-    </view>
-    <!-- 订单取消 -->
-    <view hidden="{{OrderCurrentTab!==4}}">
-        <view class="list" wx:for="{{OrderCancel}}" wx:for-item="item" wx:key="OrderCancel" bindtap="RepairAdministrationDetails">
-            <view class="list_top">
-                <view style="color: #656565;">用户编码: {{item.OrderId}}</view>
-                <view style="color: #BDA60F;">{{item.state}}</view>
             </view>
             <view class="list_bottom">
                 <view >订单金额: ￥{{item.Price}}</view>
