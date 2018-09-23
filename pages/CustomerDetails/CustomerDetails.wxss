@@ -1,3 +1,4 @@
+
 .InventoryGoods{
     padding: 20rpx 20rpx;
     font-size: 28rpx;
@@ -14,7 +15,7 @@
     justify-content: space-around;
 }
 .from_top>view{
-    width: 50%;
+    width: 33.33%;
     height: 64rpx;
     line-height: 64rpx;
     text-align: center;
@@ -26,7 +27,7 @@
     justify-content: space-around;
 }
 .from_td>view{
-    width: 50%;
+    width: 33.33%;
     height: 88rpx;
     line-height: 88rpx;
     text-align: center;
